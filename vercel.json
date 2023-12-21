@@ -6,6 +6,11 @@
   },
   "routes": [
     { "src": "/(.*)",  "dest": "/api/index.php" },
-    { "src": "/api/images/(.*)",  "dest": "/api/images/$1"},
+    {
+      "src": "/api/images/(.*\\.gif)",
+      "headers": { "Content-Type": "image/gif" },
+      "continue": true,
+      "dest": "/api/images/$1"
+    },
     { "src": "/music", "dest": "/api/music" }
 ]}
