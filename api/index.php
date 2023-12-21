@@ -5,7 +5,7 @@ teksHai = "Hai, ada surat buat kamu nih";
     
 konten = [
   {
-    gambar: "images/gambar3.gif",
+    gambar: "/images/gambar3.gif",
     ucapan: "alooowwww aaaannnnn",
   },
   {
