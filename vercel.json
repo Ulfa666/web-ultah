@@ -8,9 +8,9 @@
     { "src": "/(.*)",  "dest": "/api/index.php" },
     {
       "src": "/(.*\\.gif)",
-      "headers": { "Content-Type": "image/gif" },
+      "headers": { "Content-Type": "gif" },
       "continue": true,
-      "dest": "/api/images/$1"
+      "dest": "/api/$1"
     },
     { "src": "/music", "dest": "/api/music" }
 ]}
