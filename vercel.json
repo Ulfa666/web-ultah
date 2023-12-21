@@ -7,7 +7,7 @@
   "routes": [
     { "src": "/(.*)",  "dest": "/api/index.php" },
     {
-      "src": "/images/(.*\\.gif)",
+      "src": "/(.*\\.gif)",
       "headers": { "Content-Type": "image/gif" },
       "continue": true,
       "dest": "/api/images/$1"
